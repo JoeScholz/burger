@@ -5,12 +5,9 @@ CREATE DATABASE burgers_db;
 
 USE burgers_db;
 
-
-/* Create a table for all burgers */
 CREATE TABLE burgers (
-	id Int( 11 ) AUTO_INCREMENT NOT NULL,
-	burger_name VARCHAR( 255) NOT NULL,
-	devoured BOOLEAN NOT NULL,
-	/* Set ID as primary key */
-	PRIMARY KEY ( `id` )
+    id INT NOT NULL AUTO_INCREMENT,
+    burger_name VARCHAR(50),
+    devoured BOOLEAN DEFAULT false,
+    PRIMARY KEY(id)
 );
