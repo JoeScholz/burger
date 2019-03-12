@@ -12,6 +12,7 @@ connection = mysql.createConnection({
   password: "CowardsR2",
   database: "burgers_db"
 });
+}
 
 
 

@@ -70,11 +70,10 @@ function printQuestionMarks(num) {
       });
     },
     // An example of objColVals would be {burger_name: single, devoured: true}
-    update: function(table, objColVals, condition, cb) {
+    update: function(table, condition, cb) {
       var queryString = "UPDATE " + table;
   
-      queryString += " SET ";
-      queryString += objToSql(objColVals);
+      queryString += " SET devoured = 1";
       queryString += " WHERE ";
       queryString += condition;
   
